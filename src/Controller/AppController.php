@@ -33,7 +33,7 @@ class AppController extends Controller
      *
      * Use this method to add common initialization code like loading components.
      *
-     * e.g. `$this->loadComponent('Security');`
+     * e.g. `$this->loadComponent("Security");`
      *
      * @return void
      */
@@ -41,16 +41,16 @@ class AppController extends Controller
     {
         parent::initialize();
 
-        $this->loadComponent('RequestHandler', [
-            'enableBeforeRedirect' => false,
+        $this->loadComponent("RequestHandler", [
+            "enableBeforeRedirect" => false,
         ]);
-        $this->loadComponent('Flash');
+        $this->loadComponent("Flash");
 
         /*
          * Enable the following components for recommended CakePHP security settings.
          * see https://book.cakephp.org/3.0/en/controllers/components/security.html
          */
-        //$this->loadComponent('Security');
-        //$this->loadComponent('Csrf');
+        // $this->loadComponent("Security");
+        // $this->loadComponent("Csrf");
     }
 }

@@ -42,9 +42,9 @@ class PagesController extends AppController
     {
         $count = count($path);
         if (!$count) {
-            return $this->redirect('/');
+            return $this->redirect("/");
         }
-        if (in_array('..', $path, true) || in_array('.', $path, true)) {
+        if (in_array("..", $path, true) || in_array(".", $path, true)) {
             throw new ForbiddenException();
         }
         $page = $subpage = null;
@@ -55,12 +55,12 @@ class PagesController extends AppController
         if (!empty($path[1])) {
             $subpage = $path[1];
         }
-        $this->set(compact('page', 'subpage'));
+        $this->set(compact("page", "subpage"));
 
         try {
-            $this->render(implode('/', $path));
+            $this->render(implode("/", $path));
         } catch (MissingTemplateException $exception) {
-            if (Configure::read('debug')) {
+            if (Configure::read("debug")) {
                 throw $exception;
             }
             throw new NotFoundException();
