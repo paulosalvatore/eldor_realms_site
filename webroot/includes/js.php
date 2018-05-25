@@ -8,3 +8,6 @@
 <?= $this->Html->script("skel.min") ?>
 <?= $this->Html->script("util") ?>
 <?= $this->Html->script("main") ?>
+
+<!-- Custom Scripts -->
+<?= $this->Html->script("custom") ?>

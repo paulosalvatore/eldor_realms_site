@@ -1852,7 +1852,7 @@
 		font-size: .8em;
 		font-weight: 700;
 		height: 3.5em;
-		line-height: 3.65em;
+		line-height: 3.35em;
 		padding: 0 2.25em;
 		text-align: center;
 		text-decoration: none;
@@ -1931,8 +1931,9 @@
 	input[type="button"],
 	button,
 	.button {
-		background-color: #5a5a5a;
-		color: #ffffff !important;
+		background-color: #2775fd;
+		color: #FFFFFF;
+		box-shadow: inset 0 0 0 2px #2775fd;
 	}
 
 		input[type="submit"]:hover,
@@ -1940,7 +1941,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #676767;
+			background-color: #FFFFFF;
 		}
 
 		input[type="submit"]:active,
@@ -1948,7 +1949,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: #4d4d4d;
+			background-color: #dbdbdb;
 		}
 
 		input[type="submit"].alt,
@@ -1958,7 +1959,7 @@
 		.button.alt {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px #2775fd;
-			color: #2775fd;
+			color: #0056b3;
 		}
 
 			input[type="submit"].alt:hover,
@@ -1967,6 +1968,7 @@
 			button.alt:hover,
 			.button.alt:hover {
 				background: #2775fd;
+				color: white;
 			}
 
 			input[type="submit"].alt:active,
@@ -2670,7 +2672,7 @@
 
 		.wrapper.style1 {
 			background-color: #2775fd;
-			color: #f2a3a5;
+			color: #FFFFFF;
 		}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
@@ -2802,7 +2804,7 @@
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #f2a3a5;
+				color: #FFFFFF;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -3368,8 +3370,8 @@
 
 	#banner {
 		background-color: #2775fd;
-		color: #f2a3a5;
-		padding: 13em 0 11em 0;
+		color: #FFFFFF;
+		padding: 10em 0 10em 0;
 		background-color: #0c0c0c;
 		background-image: url("../img/Fundos/Fundo01.jpg");
 		background-size: cover;
@@ -3533,7 +3535,7 @@
 		@media screen and (max-width: 1680px) {
 
 			#banner {
-				padding: 10em 0 8em 0;
+				padding: 5em 0 2.5em 0;
 			}
 
 		}
@@ -3767,7 +3769,7 @@
 
 	#footer {
 		background-color: #2775fd;
-		color: #f2a3a5;
+		color: #FFFFFF;
 		padding: 4em 0 2em 0;
 		background: #2775fd;
 	}
@@ -3897,7 +3899,7 @@
 
 		#footer input[type="checkbox"] + label,
 		#footer input[type="radio"] + label {
-			color: #f2a3a5;
+			color: #FFFFFF;
 		}
 
 			#footer input[type="checkbox"] + label:before,
@@ -3961,7 +3963,7 @@
 		}
 
 			#footer .copyright a {
-				color: #f2a3a5;
+				color: #FFFFFF;
 			}
 
 		@media screen and (max-width: 980px) {
